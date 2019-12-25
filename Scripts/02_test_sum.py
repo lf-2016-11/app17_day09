@@ -1,6 +1,6 @@
 import pytest, os, yaml, sys
 sys.path.append(os.getcwd())
-from Data.getData import GetData
+from Base.getData import GetData
 
 def get_sum_data():
     # 定义存储数据列表
