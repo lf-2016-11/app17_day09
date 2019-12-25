@@ -1,0 +1,61 @@
+#name: "lili"   #隐藏了一个{} ,冒号后必须有空格
+#Name: "lili"
+
+
+#......对象........
+#value1: {"name":"张三"}    #支持python数据类型
+#value2: 张三               #支持自动转换数据类型
+#value3:                    #多层级关系
+#  name1: "张三"
+#  name2: "李四"
+
+#-----数组--------
+#value4:    #yaml文件数组格式
+#  - 1      #后必须跟空格
+#  - 2
+#
+#value5: [1,2,3]    #python数组类型
+
+#value6:    #字典套列表套字典
+#  - name: "lili"
+#  - name: "lili"
+
+
+#-------纯量--------
+#布尔
+#value7: true    #yaml文件支持
+#value8: false    #yaml文件支持
+
+#value9: True     #python支持数据类型
+#value10: False     #python支持数据类型
+
+
+#特殊 (了解,不要用)
+#valux: no
+#valuy: yes
+
+#整数 浮点数
+#value11: 122
+#value12: 12.00003
+
+#空
+value13: ~      #yaml 空
+value16:        #没有任何内容
+value17: null   #支持
+value18: Null   #支持
+
+value14: None     #python数据类型,不支持
+value15: none     #python数据类型,不支持
+value19: ""       #python数据类型,不支持
+
+
+#日期
+value20: 2019-12-25 12-23-34   #返回值datatme.datatime
+value21: 2019-12-25            #返回值datatme.data
+value22: 12-23-34              #返回值int
+
+value23: 2019-12-25 02-02-02   #如果是个位数,一定要补0
+value24: 2019-02-25            #如果是个位数,一定要补0
+
+
+
